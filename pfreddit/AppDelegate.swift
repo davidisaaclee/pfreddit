@@ -10,13 +10,16 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, StackSwipeDelegate {
 
 	var window: UIWindow?
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		// Override point for customization after application launch.
+		// Override point for customization after application launch.		
+		if let vc = window!.rootViewController as? StackSwipeViewController {
+			vc.delegate = self
+		}
 		return true
 	}
 
@@ -107,5 +110,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	    }
 	}
 
+	
+	// MARK: - StackSwipeDelegate
+	
+	let stack = PostStack()
+	
+	// What to show if no views in the stack.
+	var baseView: UIView? {
+		get {
+			return nil
+		}
+	}
+	
+	// The view currently on the top of the stack.
+	var topViewController: UIViewController? {
+		get {
+			if let top = stack.stack.first {
+				let r = CardViewController.init()
+				r.reloadPostData(top)
+				return r
+			} else {
+				return nil
+			}
+		}
+	}
+	
+	// The next view in the stack.
+	var nextViewController: UIViewController? {
+		get {
+			if stack.stack.count >= 2 {
+				let top = stack.stack[1]
+				let r = CardViewController.init()
+				r.reloadPostData(top)
+				return r
+			} else {
+				return nil
+			}
+		}
+	}
+	
+	// Checks if an interaction at the specified point should allow swiping.
+	func isSwipeableAtPoint(point: CGPoint) -> Bool {
+		return true
+	}
+	
+	func didSwipeLeft() {
+		stack.pop()
+	}
+	
+	func didSwipeRight() {
+		stack.pop()
+	}
 }
 

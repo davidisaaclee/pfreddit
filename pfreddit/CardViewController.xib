@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController" customModule="pfreddit" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="gNY-6l-mQn" id="Mzd-lK-DUe"/>
+                <outlet property="titleLabel" destination="xhC-gx-2Um" id="5kP-t8-hd2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gNY-6l-mQn">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="560"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0026676806347847304" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-gx-2Um">
+                    <rect key="frame" x="279" y="570" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.60623254189944142" green="0.0" blue="0.034014300086592036" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gNY-6l-mQn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9qj-gn-VHW"/>
+                <constraint firstAttribute="trailing" secondItem="gNY-6l-mQn" secondAttribute="trailing" id="AQd-GJ-SHc"/>
+                <constraint firstItem="xhC-gx-2Um" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VGn-Fv-KWd"/>
+                <constraint firstItem="gNY-6l-mQn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bls-X7-MIg"/>
+                <constraint firstAttribute="bottom" secondItem="gNY-6l-mQn" secondAttribute="bottom" constant="40" id="d7r-eg-bI1"/>
+                <constraint firstItem="xhC-gx-2Um" firstAttribute="top" secondItem="gNY-6l-mQn" secondAttribute="bottom" constant="10" id="dhE-Po-3Uz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="565" y="197"/>
+        </view>
+    </objects>
+</document>

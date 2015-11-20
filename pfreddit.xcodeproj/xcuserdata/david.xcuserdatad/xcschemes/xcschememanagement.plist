@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PFRViews.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>pfreddit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>63ACDE4F1BFB8EF9008521BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63ACDE6A1BFB91A9008521BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63ACDE731BFB91A9008521BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

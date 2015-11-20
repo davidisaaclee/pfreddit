@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6337B7801BFE384000DC9739 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337B77F1BFE384000DC9739 /* SwiftyJSON.swift */; };
+		639CE7351BFE951E0010427F /* RedditCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE7341BFE951E0010427F /* RedditCommunication.swift */; };
+		639CE7371BFE9BA40010427F /* ImgurCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CE7361BFE9BA40010427F /* ImgurCommunication.swift */; };
 		63ACDE321BFB8EF9008521BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDE311BFB8EF9008521BD /* AppDelegate.swift */; };
 		63ACDE341BFB8EF9008521BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDE331BFB8EF9008521BD /* ViewController.swift */; };
 		63ACDE371BFB8EF9008521BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ACDE351BFB8EF9008521BD /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 		63ACDE3F1BFB8EF9008521BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ACDE3D1BFB8EF9008521BD /* LaunchScreen.storyboard */; };
 		63ACDE4A1BFB8EF9008521BD /* pfredditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDE491BFB8EF9008521BD /* pfredditTests.swift */; };
 		63ACDE551BFB8EF9008521BD /* pfredditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDE541BFB8EF9008521BD /* pfredditUITests.swift */; };
+		63ACDE9A1BFBDF3B008521BD /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDE991BFBDF3B008521BD /* Posts.swift */; };
+		63ACDEAA1BFC0DD9008521BD /* StackSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDEA91BFC0DD9008521BD /* StackSwipeViewController.swift */; };
+		63ACDEAC1BFC251A008521BD /* PostStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDEAB1BFC251A008521BD /* PostStack.swift */; };
+		63ACDEAF1BFC2712008521BD /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACDEAD1BFC2712008521BD /* CardViewController.swift */; };
+		63ACDEB01BFC2712008521BD /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63ACDEAE1BFC2712008521BD /* CardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +42,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		63ACDE851BFB91A9008521BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6337B77F1BFE384000DC9739 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		639CE7341BFE951E0010427F /* RedditCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditCommunication.swift; sourceTree = "<group>"; };
+		639CE7361BFE9BA40010427F /* ImgurCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgurCommunication.swift; sourceTree = "<group>"; };
+		639FE0891BFD9872001CE637 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		63ACDE2E1BFB8EF9008521BD /* pfreddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pfreddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ACDE311BFB8EF9008521BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63ACDE331BFB8EF9008521BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +74,13 @@
 		63ACDE501BFB8EF9008521BD /* pfredditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pfredditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ACDE541BFB8EF9008521BD /* pfredditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pfredditUITests.swift; sourceTree = "<group>"; };
 		63ACDE561BFB8EF9008521BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63ACDE991BFBDF3B008521BD /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		63ACDEA91BFC0DD9008521BD /* StackSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackSwipeViewController.swift; sourceTree = "<group>"; };
+		63ACDEAB1BFC251A008521BD /* PostStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostStack.swift; sourceTree = "<group>"; };
+		63ACDEAD1BFC2712008521BD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		63ACDEAE1BFC2712008521BD /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		BC75F9D1D2B4A56A67EE2066 /* Pods-pfreddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pfreddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-pfreddit/Pods-pfreddit.release.xcconfig"; sourceTree = "<group>"; };
+		DC9C66A97B02FAACE2B736ED /* Pods-pfreddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pfreddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pfreddit/Pods-pfreddit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6337B7831BFE5C5200DC9739 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63ACDE991BFBDF3B008521BD /* Posts.swift */,
+				63ACDEAB1BFC251A008521BD /* PostStack.swift */,
+				639CE7341BFE951E0010427F /* RedditCommunication.swift */,
+				639CE7361BFE9BA40010427F /* ImgurCommunication.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		63ACDE251BFB8EF9008521BD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				63ACDE481BFB8EF9008521BD /* pfredditTests */,
 				63ACDE531BFB8EF9008521BD /* pfredditUITests */,
 				63ACDE2F1BFB8EF9008521BD /* Products */,
+				8B22D6C2DA21EECD3E5F5254 /* Pods */,
+				D3C0AF21E395A732A5634BAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +144,14 @@
 		63ACDE301BFB8EF9008521BD /* pfreddit */ = {
 			isa = PBXGroup;
 			children = (
+				6337B7831BFE5C5200DC9739 /* Model */,
+				63ACDE9F1BFC0213008521BD /* Views */,
 				63ACDE311BFB8EF9008521BD /* AppDelegate.swift */,
 				63ACDE331BFB8EF9008521BD /* ViewController.swift */,
-				63ACDE351BFB8EF9008521BD /* Main.storyboard */,
 				63ACDE3B1BFB8EF9008521BD /* Assets.xcassets */,
+				6337B77F1BFE384000DC9739 /* SwiftyJSON.swift */,
 				63ACDE3D1BFB8EF9008521BD /* LaunchScreen.storyboard */,
+				639FE0891BFD9872001CE637 /* Playground.playground */,
 				63ACDE401BFB8EF9008521BD /* Info.plist */,
 				63ACDE381BFB8EF9008521BD /* pfreddit.xcdatamodeld */,
 			);
@@ -128,6 +176,33 @@
 			path = pfredditUITests;
 			sourceTree = "<group>";
 		};
+		63ACDE9F1BFC0213008521BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63ACDEA91BFC0DD9008521BD /* StackSwipeViewController.swift */,
+				63ACDEAD1BFC2712008521BD /* CardViewController.swift */,
+				63ACDEAE1BFC2712008521BD /* CardViewController.xib */,
+				63ACDE351BFB8EF9008521BD /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8B22D6C2DA21EECD3E5F5254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C66A97B02FAACE2B736ED /* Pods-pfreddit.debug.xcconfig */,
+				BC75F9D1D2B4A56A67EE2066 /* Pods-pfreddit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3C0AF21E395A732A5634BAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +213,7 @@
 				63ACDE2A1BFB8EF9008521BD /* Sources */,
 				63ACDE2B1BFB8EF9008521BD /* Frameworks */,
 				63ACDE2C1BFB8EF9008521BD /* Resources */,
+				63ACDE851BFB91A9008521BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +313,7 @@
 			files = (
 				63ACDE3F1BFB8EF9008521BD /* LaunchScreen.storyboard in Resources */,
 				63ACDE3C1BFB8EF9008521BD /* Assets.xcassets in Resources */,
+				63ACDEB01BFC2712008521BD /* CardViewController.xib in Resources */,
 				63ACDE371BFB8EF9008521BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +341,14 @@
 			files = (
 				63ACDE341BFB8EF9008521BD /* ViewController.swift in Sources */,
 				63ACDE3A1BFB8EF9008521BD /* pfreddit.xcdatamodeld in Sources */,
+				63ACDE9A1BFBDF3B008521BD /* Posts.swift in Sources */,
+				6337B7801BFE384000DC9739 /* SwiftyJSON.swift in Sources */,
+				63ACDEAA1BFC0DD9008521BD /* StackSwipeViewController.swift in Sources */,
+				63ACDEAF1BFC2712008521BD /* CardViewController.swift in Sources */,
 				63ACDE321BFB8EF9008521BD /* AppDelegate.swift in Sources */,
+				639CE7371BFE9BA40010427F /* ImgurCommunication.swift in Sources */,
+				63ACDEAC1BFC251A008521BD /* PostStack.swift in Sources */,
+				639CE7351BFE951E0010427F /* RedditCommunication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,8 +486,10 @@
 		};
 		63ACDE5A1BFB8EF9008521BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9C66A97B02FAACE2B736ED /* Pods-pfreddit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pfreddit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dil.pfreddit;
@@ -413,8 +499,10 @@
 		};
 		63ACDE5B1BFB8EF9008521BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC75F9D1D2B4A56A67EE2066 /* Pods-pfreddit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pfreddit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dil.pfreddit;
@@ -489,6 +577,7 @@
 				63ACDE5B1BFB8EF9008521BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63ACDE5C1BFB8EF9008521BD /* Build configuration list for PBXNativeTarget "pfredditTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +586,7 @@
 				63ACDE5E1BFB8EF9008521BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63ACDE5F1BFB8EF9008521BD /* Build configuration list for PBXNativeTarget "pfredditUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +595,7 @@
 				63ACDE611BFB8EF9008521BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
